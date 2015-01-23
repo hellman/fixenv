@@ -57,6 +57,7 @@ function put_getvar_source {
 cat > .getvar.c <<EOF
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 void printvar(char * p, char * varname) {
     unsigned char *q;
     q = (unsigned char *)&p;
